@@ -1,0 +1,34 @@
+
+
+<head xmlns="http://www.w3.org/1999/html"><link rel="stylesheet" type="text/scss" href="pubFeed/pubFeed_form.scss"></head>
+<div class="pb_frm">
+<%= form_for(@publicfeed) do |f| %>
+  <% if @publicfeed.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@publicfeed.errors.count, "error") %> prohibited this publicfeed from being saved:</h2>
+
+      <ul>
+      <% @publicfeed.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :content %><br>
+    <%= f.text_field :content %>
+  </div>
+ 
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+  </div>
+<div class="bck_btn">
+  <p class="btn-pnk-arrow"><%= link_to 'Back', publicfeeds_path %></p>
+</div>

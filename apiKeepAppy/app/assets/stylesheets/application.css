@@ -1,0 +1,59 @@
+
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require_tree .
+*/
+
+.navbar-collapse {
+    background-color: #222222;
+    height: 38px
+}
+
+.navbar-nav {
+    background-color: #222222;
+    height: 38px;
+}
+
+.navbar-collapse > ul {
+    position: relative;
+    float: right;
+    left: 20px;
+}
+
+.navbar-nav > li > a.active {
+    color: white;
+    background-color:#343434;
+}
+
+
+.navbar-nav > li > a > i {
+    position: relative;
+    float: right;
+    background-color: #222222;
+    color: white;
+    padding-left: -5px;
+    top: -15px;
+}
+
+
+.navbar-nav > li > .lg-but{
+    position: relative;
+    top:  -17px;
+}
+
+.navbar-nav > li > .lg-but > a {
+    color: white;
+}
+
+.navbar-collapse > .hm_but {
+    color: white;
+}
+
+.navbar-collapse > .hm_but:hover {
+    background-color: #222222;
+}
+
+
